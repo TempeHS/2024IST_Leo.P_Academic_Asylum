@@ -10,4 +10,9 @@ public class MainCamera : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
