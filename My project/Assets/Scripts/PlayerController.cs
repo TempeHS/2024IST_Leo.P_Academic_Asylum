@@ -9,6 +9,13 @@ public class PlayerController : MonoBehaviour
     private float jumpingPower = 16f; 
     private bool isFacingRight = true;
 
+    [Header("Wall Jump System")]
+    public Transform wallCheck;
+    bool isWallTouch;
+    bool isSliding;
+    public float wallSlidingSpeed;
+
+
     [SerializeField] private Rigidbody2D rb; 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -21,6 +28,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, new Vector2(1.7f, 0.24f), 0, groundLayer);
+        isWallTouch= Physics2D.OverlapBox(wallCheck.position, new Vector2(.13f, 1.04f), 0, groundLayer);
+
+        if(isWallTouch && !isGrounded && h !=0)
+        {
+            isSliding = true;
+        }
+        else
+        {
+            isSliding = false;
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
