@@ -33,21 +33,6 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapBox(groundCheck.position, new Vector2(1.7f, 0.24f), 0, groundLayer);
         isWallTouch= Physics2D.OverlapBox(wallCheck.position, new Vector2(.13f, 1.04f), 0, groundLayer);
 
-        if(isWallTouch && !isGrounded && h !=0)
-        {
-            isSliding = true;
-        }
-        else
-        {
-            isSliding = false;
-        }
-
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
-
-        Flip();
     }
 
     private void FixedUpdate()
