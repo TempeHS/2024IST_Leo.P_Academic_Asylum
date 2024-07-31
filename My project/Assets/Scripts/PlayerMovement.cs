@@ -19,9 +19,8 @@ public class PlayerMovement : MonoBehaviour
         
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())  //&& IsGrounded()
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            //Debug.Log(Input.GetButtonDown("Jump"));
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
         
