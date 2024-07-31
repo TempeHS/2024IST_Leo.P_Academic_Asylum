@@ -203,7 +203,6 @@ GameObject:
   - component: {fileID: 104085539}
   - component: {fileID: 104085538}
   - component: {fileID: 104085537}
-  - component: {fileID: 104085536}
   - component: {fileID: 104085541}
   - component: {fileID: 104085542}
   - component: {fileID: 104085543}
@@ -214,25 +213,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &104085536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104085535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cfba9cfc382e0d4b8735577f3383b64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wallCheck: {fileID: 0}
-  wallSlidingSpeed: 0
-  rb: {fileID: 104085538}
-  groundCheck: {fileID: 263964177}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!61 &104085537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -265,7 +245,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.014361873, y: -0.000057458878}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -276,7 +256,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.49, y: 0.99}
+  m_Size: {x: 0.4838449, y: 1.0126836}
   m_EdgeRadius: 0.1
 --- !u!50 &104085538
 Rigidbody2D:
@@ -366,12 +346,12 @@ Transform:
   m_GameObject: {fileID: 104085535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.27, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 263964177}
   - {fileID: 203210783}
+  - {fileID: 263964177}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &104085541
@@ -414,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 104085538}
-  groundCheck: {fileID: 104085540}
+  groundCheck: {fileID: 263964177}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -665,7 +645,7 @@ Transform:
   m_GameObject: {fileID: 263964176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.527, z: 0}
+  m_LocalPosition: {x: 0, y: -0.706, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
