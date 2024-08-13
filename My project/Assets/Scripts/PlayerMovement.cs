@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
-    private Animator anim;
+    public Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -36,9 +36,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        Flip();
-
-        if(horizontal != 0)
+        if(horizontal <= -0.1)
         {
             anim.SetBool("isWalking", true);
         }
@@ -46,6 +44,17 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
+
+        if(horizontal >= 0.1)
+        {
+            anim.SetBool("isWalkingR", true);
+        }
+        else
+        {
+            anim.SetBool("isWalkingR", false);
+        }
+
+        anim.SetBool("isJumping", !IsGrounded());
     }
 
     private void FixedUpdate()
@@ -58,16 +67,5 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log(Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer));
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
-
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale; 
-            localScale.x *= -1f; 
-            transform.localScale = localScale;
-        }
     }
 }
