@@ -23,6 +23,11 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
+        if (DialogueManager.Instance.isDialogueActive)
+        {
+            horizontal = 0f;
+            return;
+        }
         
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -65,7 +70,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        Debug.Log(Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer));
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 }
