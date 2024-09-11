@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = true;
 
-        animator.Play("show");
+        animator.Play("in");
 
         lines.Clear();
 
@@ -73,6 +73,6 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isDialogueActive = false;
-        animator.Play("hide");
+        animator.Play("out");
     }
 }
