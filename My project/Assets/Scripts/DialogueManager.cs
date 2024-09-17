@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
 
-    private Queue<DialogueLine> lines;
+    public Queue<DialogueLine> lines;
 
     public bool isDialogueActive = false;
 
