@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
-
+    public MeritManager mm;
     // Start is called before the first frame update
     void Update()
     {
@@ -71,5 +71,13 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Merit"))
+        {
+            mm.meritCount++;
+        }
     }
 }
