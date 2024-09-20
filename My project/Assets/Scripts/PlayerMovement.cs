@@ -22,13 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public MeritManager mm;
     // Start is called before the first frame update
     void Update()
-    {
-        if (DialogueManager.Instance.isDialogueActive)
-        {
-            horizontal = 0f;
-            return;
-        }
-        
+    {   
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
