@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Merit"))
         {
+            Destroy(other.gameObject);
             mm.meritCount++;
         }
     }
