@@ -9,6 +9,9 @@ public class EnemyShooting : MonoBehaviour
 
     private float timer; 
     private GameObject player;
+
+    public float shootDelay;
+    public int range;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +24,11 @@ public class EnemyShooting : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
         
-        if(distance < 20)
+        if(distance < range)
         {
             timer += Time.deltaTime;
 
-            if(timer > 2)
+            if(timer > shootDelay)
             {
                 timer = 0;
                 shoot();
