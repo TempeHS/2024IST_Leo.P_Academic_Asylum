@@ -957,7 +957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 3302880547372680160, guid: c4813bf3422c90e49b6eb6c57a634ceb, type: 3}
   bookPos: {fileID: 566234049}
-  shootDelay: 0.25
+  shootDelay: 0.4
   range: 30
 --- !u!1 &638419599
 GameObject:
