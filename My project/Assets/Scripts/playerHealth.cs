@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public float health;
     public float maxHealth;
     public Image healthBar;
+    public GameObject respawnPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,8 @@ public class PlayerHealth : MonoBehaviour
 
         if(health <= 0)
         {
-            Destroy(gameObject);
+            transform.position = respawnPoint.transform.position;
+            health = maxHealth;
         }
     }
 }
