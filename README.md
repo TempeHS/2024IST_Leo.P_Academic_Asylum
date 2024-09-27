@@ -15,6 +15,7 @@ https://github.com/user-attachments/assets/11c69a8e-5894-49b5-a535-0c9a754a5e7f
     - [Softwares](#Softwares)
     - [Tutorials](#Tutorials)
   - [Scripts](#Scripts)
+  - [Credits](#Credits)
   - [Bug notes](#Bug-notes)
 # User Documentation
 ## About
