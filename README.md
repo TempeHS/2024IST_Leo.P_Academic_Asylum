@@ -39,6 +39,13 @@ My game was able to fufill the main parts of what I intended to make. However, I
 ## Asset showcase
 ## Tools used
 ### Softwares
+## Unity
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/eab910cd-c36e-4b82-bb46-c30059dbb23b">
+## Visual Studio Code
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/34fd8507-9765-4cc5-b76d-cdd2a789757b">
+## GitHub
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/6a1a190f-55e3-446d-ac94-9a641e453c63">
+## Piskel
 ### Tutorials
 Links to the main tutorials that I used for my game:
 - Player movement: https://www.youtube.com/watch?v=K1xZ-rycYY8
