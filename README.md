@@ -1,5 +1,19 @@
 # Academic Asylum
 https://github.com/user-attachments/assets/11c69a8e-5894-49b5-a535-0c9a754a5e7f
+# Table of contents
+- [User Documentation](#User-Documentation)
+  - [About](#About)
+  - [Game objective and information](#Game-objective-and-information)
+    - [Objective](#Objective)
+    - [Game information](#Game-information)
+  - [Controls](#Controls)
+- [Developer Documentation](#Developer-Documentation)
+  - [What I intended to make](#What-I-intended-to-make)
+  - [Evaluation of success](#Evaluation-of-success)
+  - [Asset showcase](#Asset-showcase)
+  - [Tools used](#Tools-used)
+    - [Softwares](#Softwares)
+    - [Tutorials](#Tutorials)
 # User Documentation
 ## About
 Academic Asylum is a 2D platformer designed for a year 10 IST assessment. The game is meant to be a play on the social issue of academic stress, with the game being about a student who has to pass through multiple classrooms while at the mercy of his teacher throwing books at him, with the teacher increasing in speed and range through every classroom the student manages to get through. 
@@ -26,3 +40,9 @@ My game was able to fufill the main parts of what I intended to make. However, I
 ## Tools used
 ### Softwares
 ### Tutorials
+Links to the main tutorials that I used for my game:
+- Player movement: https://www.youtube.com/watch?v=K1xZ-rycYY8
+- Main menu: https://www.youtube.com/watch?v=DX7HyN7oJjE
+- Enemy shooting: https://www.youtube.com/watch?v=--u20SaCCow
+- Collectables: https://www.youtube.com/watch?v=5GWRPwuWtsQ
+- Health bar: https://www.youtube.com/watch?v=bRcMVkJS3XQ
