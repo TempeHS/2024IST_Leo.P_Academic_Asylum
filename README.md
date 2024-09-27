@@ -14,6 +14,7 @@ https://github.com/user-attachments/assets/11c69a8e-5894-49b5-a535-0c9a754a5e7f
   - [Tools used](#Tools-used)
     - [Softwares](#Softwares)
     - [Tutorials](#Tutorials)
+  - [Scripts](#Scripts)
 # User Documentation
 ## About
 Academic Asylum is a 2D platformer designed for a year 10 IST assessment. The game is meant to be a play on the social issue of academic stress, with the game being about a student who has to pass through multiple classrooms while at the mercy of his teacher throwing books at him, with the teacher increasing in speed and range through every classroom the student manages to get through. 
@@ -37,15 +38,23 @@ The game will be able to change student’s actions towards experiencing academi
 ## Evaluation of success
 My game was able to fufill the main parts of what I intended to make. However, I was unable to add most of the features I had listed in the last section of what I intended to create. Althought I didn't complete them, my end product turned out well and met the goals I laid out at the begining of my intentions. 
 ## Asset showcase
+[All assets used in game](https://github.com/TempeHS/2024IST_Leo.P_Academic_Asylum/tree/main/My%20project/Assets/Sprites)
 ## Tools used
+
 ### Softwares
+
 ## Unity
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/eab910cd-c36e-4b82-bb46-c30059dbb23b">
+
 ## Visual Studio Code
 <img width="952" alt="image" src="https://github.com/user-attachments/assets/34fd8507-9765-4cc5-b76d-cdd2a789757b">
+
 ## GitHub
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/6a1a190f-55e3-446d-ac94-9a641e453c63">
+
 ## Piskel
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/84837e2c-a718-48b7-b702-3f664d22b406">
+
 ### Tutorials
 Links to the main tutorials that I used for my game:
 - Player movement: https://www.youtube.com/watch?v=K1xZ-rycYY8
@@ -55,3 +64,7 @@ Links to the main tutorials that I used for my game:
 - Health bar: https://www.youtube.com/watch?v=bRcMVkJS3XQ
 ## Scripts
 [All scripts used in my game](https://github.com/TempeHS/2024IST_Leo.P_Academic_Asylum/tree/main/My%20project/Assets/Scripts)
+
+### Bug notes
+- Volume bar sometimes locks in place and doesn't move
+- When end of game is reached there is no way to exit, to leave the game you must press ALT + F4 or FN + ALT + F4
