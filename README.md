@@ -47,4 +47,4 @@ Links to the main tutorials that I used for my game:
 - Collectables: https://www.youtube.com/watch?v=5GWRPwuWtsQ
 - Health bar: https://www.youtube.com/watch?v=bRcMVkJS3XQ
 ## Scripts
-[All scripts used in my game (C#)](#https://github.com/TempeHS/2024IST_Leo.P_Academic_Asylum/tree/main/My%20project/Assets/Scripts)
+[All scripts used in my game](https://github.com/TempeHS/2024IST_Leo.P_Academic_Asylum/tree/main/My%20project/Assets/Scripts)
