@@ -66,6 +66,14 @@ Links to the main tutorials that I used for my game:
 ## Scripts
 [All scripts used in my game](https://github.com/TempeHS/2024IST_Leo.P_Academic_Asylum/tree/main/My%20project/Assets/Scripts)
 
+### Credits
+- Game production and code: Leo Projceski
+- Asset design: Leo Projceski 
+- Soundtracks:
+  - Main menu: Leo Projceski
+  - Level soundtracks: Leo Projceski
+  - Winning soundtrack: [Pedro da bolia on YouTube](https://www.youtube.com/watch?v=KPhqU--Mq1A)
+
 ### Bug notes
 - Volume bar sometimes locks in place and doesn't move
 - When end of game is reached there is no way to exit, to leave the game you must press ALT + F4 or FN + ALT + F4
